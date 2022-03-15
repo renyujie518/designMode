@@ -1,3 +1,5 @@
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * @author renyujie518
  * @version 1.0.0
@@ -15,14 +17,15 @@ public class singletonTest8 {
         System.out.println(instance1 == instance2);
         System.out.println(instance1.hashCode());
         System.out.println(instance2.hashCode());
-        instance1.sayOk();
-        instance2.sayOk();
+        instance1.getId();
+        instance2.getId();
     }
 
     enum Singleton7{
         INSTANCE;
-        public  void sayOk() {
-            System.out.println("ok");
+        private AtomicLong id = new AtomicLong(0);
+        public  long getId() {
+            return id.incrementAndGet();
         }
     }
 }
