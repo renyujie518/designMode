@@ -11,7 +11,7 @@ import phoneBrand.Brand;
  */
 public class FoldedPhone extends Phone {
 
-    //构造器
+    //构造器（实际上是调用父类Phone的构造器）
     public FoldedPhone(Brand brand) {
         super(brand);
     }

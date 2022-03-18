@@ -6,7 +6,7 @@ import phoneBrand.Brand;
  * @author renyujie518
  * @version 1.0.0
  * @ClassName phoneType.Phone.java
- * @Description TODO
+ * @Description 桥
  * @createTime 2022年03月18日 15:19:00
  */
 public abstract class Phone {
