@@ -22,6 +22,8 @@ import java.util.HashMap;
 public class WebSiteFactory {
 
     //集合， 充当池的作用
+    //不可变对象不能暴露任何 set() 等修改内部状态的方法。
+    // 之所以要求享元是不可变对象，那是因为它会被多处代码共享使用，避免一处代码对享元进行了修改，影响到其他使用它的代码。
     private HashMap<String, ConcreteWebSite> pool = new HashMap<>();
 
     //根据网站的类型，返回一个网站, 如果没有就创建一个网站，并放入到池中,并返回
