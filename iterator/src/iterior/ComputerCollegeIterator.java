@@ -9,6 +9,7 @@ import java.util.Iterator;
  * @version 1.0.0
  * @ClassName iterior.ComputerCollegeIterator.java
  * @Description 计算机学院迭代器 计算机学院是以数组方式存放系
+ * 待遍历的容器对象数组通过依赖注入传递到迭代器类中
  * @createTime 2022年03月20日 17:26:00
  */
 public class ComputerCollegeIterator implements Iterator {
